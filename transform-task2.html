@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .bat
+        {
+            /* border: 1px solid black; */
+            padding-top: 200px;
+            animation: animation 2s infinite;
+            padding-left: 50px;
+        }
+        .boll
+        {
+            background-color: green;
+            border: 1px solid black;
+            border-radius: 50%;
+            height: 60px;
+            width: 60px;
+            position: absolute;
+            left:240px;
+            z-index: 1;
+            animation: animation2 2s infinite;
+        }
+        @keyframes animation {
+            0%{transform: skewx(20deg); rotate: 30deg;}
+            0%{transform: skewx(20deg); rotate: 30deg;}
+
+        }
+        @keyframes animation2 {
+            0%{position: absolute; left: 240px; top: 10px;}
+            50%{position: absolute; left: 240px; top: 300px;}
+            100%{position: absolute; left: 240px; top: 10px;}
+
+        }
+    </style>
+</head>
+<body>
+    <div style="height: 450px; width: 450px; border: 1px solid black;">
+        <div class="boll"></div>
+        <div class="bat"><img src="web-images/bat.jpg" alt=""></div>
+    </div>
+</body>
+</html>

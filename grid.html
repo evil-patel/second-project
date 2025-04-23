@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .grid
+        {
+            display: grid;
+            grid-template-columns: repeat(8,1fr);
+            grid-template-rows: repeat(5,1fr);
+        }
+        .grid>div{
+            height: 142px;
+        }
+        .box1
+        {
+            grid-column: 1;
+            grid-row: 1;
+            background-color: black;
+        }
+        .box2
+        {
+            grid-column: 2;
+            grid-row: 1;
+            background-color: rgb(255, 240, 240);
+            
+        }
+        .box3
+        {
+            grid-column: 3;
+            grid-row: 1;
+            background-color: black;
+            
+        }
+        .box4
+        {
+            grid-column: 4;
+            grid-row: 1;
+            background-color: rgb(255, 240, 240);
+        }
+        .box5
+        {
+            grid-column: 5;
+            grid-row: 1;
+            background-color: black;
+        }
+        .box6
+        {
+            grid-column: 6;
+            grid-row: 1;
+            background-color: rgb(255, 240, 240);
+        }
+        .box7
+        {
+            grid-column: 7;
+            grid-row: 1;
+            background-color: black;
+        }
+        .box8
+        {
+            grid-column: 8;
+            grid-row: 1;
+            background-color: rgb(255, 240, 240);
+        }
+        .box9
+        {
+            grid-column: 1;
+            grid-row: 2;
+            background-color: rgb(255, 240, 240);
+        }
+        .box10
+        {
+            grid-column: 2;
+            grid-row: 2;
+            background-color: black;
+        }
+        .box11
+        {
+            grid-column: 3;
+            grid-row: 2;
+            background-color: rgb(255, 240, 240);
+        }
+        .box12
+        {
+            grid-column: 4;
+            grid-row: 2;
+            background-color: black;
+        } 
+        .box13
+        {
+            grid-column: 5;
+            grid-row: 2;
+            background-color: rgb(255, 240, 240);
+        }
+        .box14
+        {
+            grid-column: 6;
+            grid-row: 2;
+            background-color: black;
+        }  
+        .box15
+        {
+            grid-column: 7;
+            grid-row: 2;
+            background-color: rgb(255, 240, 240);
+        }
+        .box16
+        {
+            grid-column: 8;
+            grid-row: 2;
+            background-color: black;
+        }
+        .box17
+        {
+            grid-column: 1;
+            grid-row: 3;
+            background-color: black;
+        }
+        .box18
+        {
+            grid-column: 2;
+            grid-row: 3;
+            background-color: rgb(255, 240, 240);
+        }
+        .box19
+        {
+            grid-column: 3;
+            grid-row: 3;
+            background-color: black;
+        }
+        .box20
+        {
+            grid-column: 4;
+            grid-row: 3;
+            background-color: rgb(255, 240, 240);
+        }
+        .box21
+        {
+            grid-column: 5;
+            grid-row: 3;
+            background-color: black;
+        }
+        .box22
+        {
+            grid-column: 6;
+            grid-row: 3;
+            background-color: rgb(255, 240, 240);
+        }
+        .box23
+        {
+            grid-column: 7;
+            grid-row: 3;
+            background-color: black;
+        }
+        .box24
+        {
+            grid-column: 8;
+            grid-row: 3;
+            background-color: rgb(255, 240, 240);
+        }
+        .box25
+        {
+            grid-column: 1;
+            grid-row: 4;
+            background-color: rgb(255, 240, 240);
+        }
+        .box26
+        {
+            grid-column: 2;
+            grid-row: 4;
+            background-color: black;
+        }
+        .box27
+        {
+            grid-column: 3;
+            grid-row: 4;
+            background-color: rgb(255, 240, 240);
+        }
+        .box28
+        {
+            grid-column: 4;
+            grid-row: 4;
+            background-color: black;
+        } 
+        .box29
+        {
+            grid-column: 5;
+            grid-row: 4;
+            background-color: rgb(255, 240, 240);
+        }
+        .box30
+        {
+            grid-column: 6;
+            grid-row: 4;
+            background-color: black;
+        }  
+        .box31
+        {
+            grid-column: 7;
+            grid-row: 4;
+            background-color: rgb(255, 240, 240);
+        }
+        .box32
+        {
+            grid-column: 8;
+            grid-row: 4;
+            background-color: black;
+        }
+        .box33
+        {
+            grid-column: 1;
+            grid-row: 5;
+            background-color: black;
+        }
+        .box34
+        {
+            grid-column: 2;
+            grid-row: 5;
+            background-color: rgb(255, 240, 240);
+        }
+        .box35
+        {
+            grid-column: 3;
+            grid-row: 5;
+            background-color: black;
+        }
+        .box36
+        {
+            grid-column: 4;
+            grid-row: 5;
+            background-color: rgb(255, 240, 240);
+        }
+        .box37
+        {
+            grid-column: 5;
+            grid-row: 5;
+            background-color: black;
+        }
+        .box38
+        {
+            grid-column: 6;
+            grid-row: 5;
+            background-color: rgb(255, 240, 240);
+        }
+        .box39
+        {
+            grid-column: 7;
+            grid-row: 5;
+            background-color: black;
+        }
+        .box40
+        {
+            grid-column: 8;
+            grid-row: 5;
+            background-color: rgb(255, 240, 240);
+        }
+    </style>
+</head>
+<body>
+    <div class="grid">
+        <div class="box1"></div>
+        <div class="box2"></div>
+        <div class="box3"></div>
+        <div class="box4"></div>
+        <div class="box5"></div>
+        <div class="box6"></div>
+        <div class="box7"></div>
+        <div class="box8"></div>
+        <div class="box9"></div>
+        <div class="box10"></div>
+        <div class="box11"></div>
+        <div class="box12"></div>
+        <div class="box13"></div>
+        <div class="box14"></div>
+        <div class="box15"></div>
+        <div class="box16"></div>
+        <div class="box17"></div>
+        <div class="box18"></div>
+        <div class="box19"></div>
+        <div class="box20"></div>
+        <div class="box21"></div>
+        <div class="box22"></div>
+        <div class="box23"></div>
+        <div class="box24"></div>
+        <div class="box25"></div>
+        <div class="box26"></div>
+        <div class="box27"></div>
+        <div class="box28"></div>
+        <div class="box29"></div>
+        <div class="box30"></div>
+        <div class="box31"></div>
+        <div class="box32"></div>
+        <div class="box33"></div>
+        <div class="box34"></div>
+        <div class="box35"></div>
+        <div class="box36"></div>
+        <div class="box37"></div>
+        <div class="box38"></div>
+        <div class="box39"></div>
+        <div class="box40"></div>
+</body>
+</html>

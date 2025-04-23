@@ -1,0 +1,53 @@
+<!-- task is to shoe next and previous element in an array. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+   <script>
+       let images =["images/img1.jpeg","images/img2.jpeg","images/img3.jpeg","images/img7.jpeg"]
+       let index=0;
+       function fun2()
+       {
+           index++;
+           document.getElementById("img1").src=images[index]
+           if(index>0)
+       {
+           document.getElementById("btnprev").disabled=false
+       }
+       if(index==(images.length-1))
+       {
+           document.getElementById("btnnext").disabled=true
+       }
+       }
+       function fun1()
+       {
+           index--;
+           document.getElementById("img1").src=images[index]
+           if(index==0)
+       {
+           document.getElementById("btnprev").disabled=true
+       }
+       if(index<(images.length-1))
+       {
+           document.getElementById("btnnext").disabled=false
+       }
+       }
+   </script>
+   <style>
+       #dquote
+       {
+           width: 20%;
+           text-align: center;
+       }
+   </style>
+</head>
+<body>
+   <div style="display: flex;">
+       <input type="button" id="btnprev" disabled value="prev" onclick="fun1()">
+       <img src="images/img1.jpeg" width="350px" height="250px" alt="" id="img1">
+       <input type="button" value="next" id="btnnext" onclick="fun2()">
+   </div>
+</body>
+</html>

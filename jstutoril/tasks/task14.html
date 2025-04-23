@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function fun1()
+        {
+            var t1= document.getElementById("t1").value
+            if(t1=='a' || t1=='e' || t1=='i' || t1=='o' || t1=='u' || t1=='A' || t1=='E' || t1=='I' || t1=='O' || t1=='U')
+        {
+            document.getElementById("result").innerHTML="enter character is vovel"
+        }
+        else
+        {
+            document.getElementById("result").innerHTML="enter character is consonant"
+        }
+            
+        }
+    </script>
+</head>
+<body>
+    <!-- 1.	Write a program to find that the entered character is vowel or consonant using switch case -->
+     <p>
+        enter character : <input type="text" maxlength="1" id="t1">
+     </p>
+     <input type="button" value="check" onclick="fun1()">
+     <p id="result"></p>
+</body>
+</html>

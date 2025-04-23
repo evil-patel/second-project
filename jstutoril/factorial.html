@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function fun1()
+        {
+            var i,n=1;
+            var t1 = document.getElementById("t1").value;
+            var res = document.getElementById("result")
+            for(i=1;i<=t1;i++)
+        {
+            res.innerHTML=(n=n*i);    
+        }
+        }
+    </script>
+</head>
+<body>
+    <p>
+        enter number: <input type="text" id="t1">
+    </p>
+    <input type="button" value="factorial" onclick="fun1()">
+    <p id="result">
+
+    </p>
+</body>
+</html>

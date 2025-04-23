@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function fun1()
+        {
+            var start = document.getElementById("start")
+            var end = document.getElementById("end")
+            start1=parseInt(start.value)
+            end1=parseInt(end.value)
+        if(start.value=="" || end.value=="")
+        {
+            alert("enter both the fields.")
+        }
+        else if(isNaN(start.value) || isNaN(end.value))
+        {
+            alert("enter number in both fields.")
+        }
+        else if(start.value<0 || start.value>=end.value)
+        {
+            alert("enter value lessthen end value.")
+        }
+        else
+        {
+            for(var i=start.value;i<=end.value;i++)
+            {
+                console.log(i)
+            }
+        start1.value==""
+        end1.value==""
+        }
+        }
+    </script>
+</head>
+<body>
+    <p>
+        enter start no : <input type="text" id="start"><br>
+        enter end no : <input type="text" id="end">
+    </p>
+    <p>
+        <input type="button" value="Check" onclick="fun1()">
+    </p>
+</body>
+</html>

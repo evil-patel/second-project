@@ -1,0 +1,80 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+           async function  fun1()
+        {
+            // let i = prompt("enter any no ")
+             await   new Promise((resolve,reject)=>
+            {
+                let i = false;
+                setTimeout(()=>                
+                {
+                       if(i)
+                       {
+                        resolve("promise is fulfilled")                        
+                       }
+                       else
+                       {
+                        reject("promise Rejected")                        
+                       } 
+                },3000);
+            })
+            .then((d)=>console.log(d))
+            .catch((e)=>console.log(e))
+        }
+         async function fun2()
+        {
+           await   fun1()
+            console.log("this is after promise code ")            
+        }
+        function callapi()
+        {
+            fetch('https://jsonplaceholder.typicode.com/users/')
+                .then(response => response.json())
+                .then(data=>{
+                   let rows = data.map((user)=>
+                   {
+                    return `<tr><td style="border: 1px solid black;">${user.name}<td><td style="border: 1px solid black;">${user.email}<td><td style="border: 1px solid black;">${user.username}<td><td style="border: 1px solid black;">${user.phone}<td><td style="border: 1px solid black;">${user.address.city}<td></tr>`
+                   }).join("")
+
+                   document.getElementById("data").innerHTML=rows
+                }
+                )
+                .catch((e)=>console.log("promise failed"))
+
+                console.log("helllslkfh sdfjkdsjkh f")
+                    // .then(json => console.log(json))
+        }
+    </script>
+    <style>
+        #t1>th
+        {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <input type="button" value="Click here " onclick="fun2()">
+    <input type="button" value="For fetch api " onclick="callapi()">
+    <table style="border: 1px solid black;">
+    <thead>
+        <tr id="t1">
+            <th>name</th>
+            <th>email</th>
+            <th>username</th>
+            <th>phone</th>
+            <th>address</th>
+        </tr>
+    </thead>
+    <tbody id="data" >
+
+    </tbody>
+    </table>
+</body>
+</html>

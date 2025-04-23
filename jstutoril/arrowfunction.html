@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let hi=()=>alert("this is single line arrow function ") 
+        let hello=()=>
+    {
+        alert("this is multiple line function")
+        alert("this is mutliple line function 2")
+    }
+    let fun1=(name)=>alert("hello " + name)
+    </script>
+</head>
+<body>
+    <input type="button" value="single line" onclick="hi()">
+    <input type="button" value="multiple line" onclick="hello()">
+    <input type="button" value="using parameter" onclick="fun1('manthan')">
+</body>
+</html>

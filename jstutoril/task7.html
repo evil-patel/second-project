@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function fun1()
+        {
+            var t1 =document.getElementById("t1");
+            var t2 =document.getElementById("t3");
+            var name = t1.value;
+            var age = t3.value;
+            document.getElementById("t1").value = "";
+            document.getElementById("t2").innerHTML+= "<br>"+name + "|" + age;
+        }
+    </script>
+</head>
+<body>
+    <p>
+        enter your name : <input type="text" id="t1">
+        enter your age : <input type="number" id="t3">
+    </p>
+    <input type="button" value="add name" onclick="fun1()">
+    <p id="t2">Name  age</p>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .rectangle
+        {
+            height: 170px;
+            width: 340px;
+            position: relative;
+            left: 100px;
+        }
+        .circle
+        {
+            border-radius: 50%;
+            height: 100px;
+            width: 100px;
+            background-color: black;
+        }
+        .box
+        {
+            animation-name: animation;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+        }
+        @keyframes animation {
+            0%{position:relative; left: 0px;}
+            50%{position: relative; left: 500px;}
+            100%{position: relative; left: 0px;}
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="rectangle" style="background-color: lightsalmon;z-index: 1; "></div>
+        <div class="circle"  style="position: absolute; top: 105px; left: 92px;"></div>
+        <div class="circle"  style="position: absolute; top: 105px; left: 361px;"></div>
+        <div class="circle"  style="position: absolute; top: 190px; left: 20px;"></div>
+        <div class="circle"  style="position: absolute; top: 190px; left: 290px;"></div>
+    </div>
+</body>
+</html>

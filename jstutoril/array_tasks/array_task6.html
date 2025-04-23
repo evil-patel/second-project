@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var products=[
+            {id:1,title:"realme",imgpath:"images/img1.jpeg",price:"15000"},
+            {id:2,title:"realme",imgpath:"images/img2.jpeg",price:"18000"},
+            {id:3,title:"realme",imgpath:"images/img3.jpeg",price:"30000"},
+            {id:4,title:"realme",imgpath:"images/img7.jpeg",price:"45000"},
+        ]
+        mk=[]
+        function fun1()
+        {   
+            var ui = products.map((p)=>
+        {
+            return `<div class='product'> <img id='t1' src=${p.imgpath}>
+                 <h1>${p.title}</h1> 
+                 <h2>${p.price}</h2> 
+                 <h3><input type='button' value='add' onclick='fun2("${p.title}",${p.price})'></h3> 
+                 </div>`
+        }).join('')
+        document.getElementById("show").innerHTML=ui
+        }
+        function fun2(t,p)
+        {
+            // alert(p)
+        //    var uj=products.map((m)=>
+        // {
+        //     return `<p>${m.title}</p><p>${m.price}`
+        // })
+        let index = mk.findIndex(item => item.price == p);
+    if (index <0) {
+        mk.push({ title: t, price: p, quantity: 1 });
+    } 
+    else
+    { 
+        mk[index].quantity+=1;
+    }
+        console.log(JSON.stringify(mk))
+        showcart()
+        }
+        function showcart()
+        {
+            let ui = mk.map((e)=>`<p>${e.title} &nbsp   ${e.price} &nbsp   ${e.quantity}</p>`).join("");
+            document.getElementById("dcart").innerHTML=ui
+        }
+    </script>
+    <style>
+        .product
+        {
+            width: 200px;
+            background-color: black;
+            color: rgb(0, 136, 255);
+            text-align: center;
+            flex-wrap: wrap;
+        }
+        #t1
+        {
+            height: 170px;
+            width: 200px;
+        }
+        #show
+        {
+            width: 100%;
+            border: 1px solid aqua;
+            flex-wrap: wrap;
+            gap: 20px;
+            display: flex;
+        }
+    </style>
+</head>
+<body onload="fun1()">
+    <input type="button" value="cart" onclick="showcart();">
+    <div id="dcart">
+
+    </div>
+    <div id="show">
+    </div>
+</body>
+</html>

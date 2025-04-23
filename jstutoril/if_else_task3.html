@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function chk(p)
+        {
+            var result = document.getElementById("result");
+            if(p == "zout")
+            {
+                result.style.height="400px"
+                result.style.width="400px"   
+            }
+            else
+            {
+                if(p == "zin")
+                {
+                    result.style.height = "100px"
+                    result.style.width = "100px"
+                }
+                else
+                {
+                    result.style.height = "200px"
+                    result.style.width = "200px"
+                }
+            }
+        }
+    </script>
+</head>
+<body>
+    <p>
+        <input type="button" value="+" onclick="chk('zout')">
+        <input type="button" value="-" onclick="chk('zin')">
+        <input type="button" value="original" onclick="chk('o')" >
+    </p>
+    <img id="result" style="height: 200px; width: 200px;" src="images/img2.jpeg" alt="">
+
+</body>
+</html>

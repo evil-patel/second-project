@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .menu
+        {
+            width: 100%;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            list-style: none;
+            background-color: #26b7b7;
+            justify-content: right;
+            /* gap:20px; */
+        }
+        li
+        {
+            height:65px;
+            align-content: center;
+            width:120px;         
+            font-size: 20px;   
+            text-align: center;
+        }
+        li:hover
+        {
+            background-color: #085961db;       
+        }
+        li>a
+        {
+            color:white;
+            text-decoration: none;
+        }
+      .navbar
+      {
+        display: flex;
+        /* flex-wrap: wrap; */
+      } 
+      .navbar>img{
+        width:200px;
+        height:65px;
+      }
+      .latest-item
+      {
+        display: flex; align-items:center; gap:20px;
+        /* border-width: 1px;
+        border-color:black;
+        border-style: solid; */
+        border: 1px solid rgb(239, 238, 238);
+      }
+      .latest-images
+      {
+        display: flex;
+        gap:50px;
+        justify-content: center;
+      }
+      .mname
+      {
+       
+            font-size:25px;
+            font-weight: bold;
+            color:rgb(35, 98, 123);
+
+      }
+      .latest-item>img
+      {
+        width:125px;
+        height:150px;
+      }
+      .btn-view
+      {
+        height: 40px;
+        width: 120px;
+        background-color: #303093;
+        color:white;
+        border:none;
+      }
+      .btn-view:hover
+      {
+        font-weight: bold;
+        background-color: #f1f1fe;
+        color:#303093;
+        border:2px solid #303093;
+      }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <img src="images/img2.jpeg" alt="">
+    <ul class="menu">
+        <li> <a href="#">Home</a></li>
+        <li> <a href="#">About us</a></li>
+        <li> <a href="#">Contact</a></li>
+        <li> <a href="#">Gallery</a></li>
+    </ul>
+</div>
+<img src="images/banner.png" style="height:550px; width:100%" alt="">
+
+<div>
+  <span style="text-transform: uppercase;">  Latest Mobile </span>
+   <input type="button" class="btn-view" value="View All"/>
+</div>
+<div class="latest-images">
+        <div class="latest-item">
+            <img src="images/vivo.webp" alt="">
+            <div>
+               <span class="mname"> VIVO</span><br>
+                <span  >Y18</span>
+            </div>
+        </div>
+        <div class="latest-item">
+            <img src="images/vivo2.webp" alt="">
+            <div>
+                <span class="mname"> VIVO</span><br>
+                 <span  >V30e</span>
+             </div>
+        </div>
+        <div class="latest-item">
+            <img src="images/realme.webp" alt="">
+            <div>
+                <span class="mname"> Real Me</span><br>
+                 <span  >C655G</span>
+             </div>
+        </div>
+        <div class="latest-item">
+            <img src="images/oneplus.webp" alt="">
+            <div>
+                <span class="mname"> ONEPLUS</span><br>
+                 <span  >Node CE4 5g</span>
+             </div>
+        </div>
+    </div>
+
+    <a href="#">Go to bottom </a>
+</body>
+</html>

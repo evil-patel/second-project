@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container
+        {
+            display: flex;
+            gap: 50px;
+            width: 100%;
+            flex-wrap: wrap;
+        }
+        .box
+        {
+            height: 100px;
+            width: 100px;
+        }
+        .box1
+        {
+            background: linear-gradient(to right, yellow 30px 30px, blue 40px 55px, red 80px);        }
+        .box2
+        {
+            background: linear-gradient(130deg,yellow,blue,red,green 50px,black,pink);
+        }
+        .box3
+        {
+            border: 1px solid black;
+            background: linear-gradient(130deg, yellow 40px 40px,white 10px);   
+        }
+        .box4
+        {
+            border: 1px solid black;
+
+            background: linear-gradient(130deg, white 100px,yellow 10px);     
+        }
+        .box5
+        {
+            border: 1px solid black;
+
+            background: linear-gradient(45deg,red 50px,blue 50px 70px,red 80px);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box box1"></div>
+        <div class="box box2"></div>
+        <div class="box box3"></div>
+        <div class="box box4"></div>
+        <div class="box box5"></div>
+    </div>
+</body>
+</html>

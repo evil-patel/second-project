@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function fun1()
+        {
+            images= ["images/img1.jpeg","images/img2.jpeg","images/img3.jpeg"]
+            counter=0;
+            var t1 = document.getElementById("t1")
+            for(var i=0;i<=(images.length-1);i++)
+        {
+            setInterval(() => {
+               if(counter<=0 || counter<(images.length-1))
+               {
+                counter++;
+                console.log(counter)
+                t1.src=images[counter];
+               }
+               else
+               {
+                if(counter==(images.length-1))
+               {
+                    // t1.disabled=true;
+                    counter=0
+                    // document.getElementById("p1").innerHTML="no more images"
+               }
+               }
+            },(i+1)*2000);
+        }
+        }
+    </script>
+</head>
+<body onload="fun1()">
+    <div>
+        <p id="p1"></p>
+        <img src="images/img1.jpeg" disabled width="350px" height="250px" alt="" id="t1">
+    </div>
+</body>
+</html>

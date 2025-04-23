@@ -1,0 +1,52 @@
+<!-- task is to shoe next and previous element in an array. -->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let mobile =["oppo","vivo","samsung","apple","mi","nokia","blueberry"]
+        let index=0;
+        function fun2()
+        {
+            index++;
+            document.getElementById("dquote").innerHTML=mobile[index]
+            if(index>0)
+        {
+            document.getElementById("btnprev").disabled=false
+        }
+        if(index==(mobile.length-1))
+        {
+            document.getElementById("btnnext").disabled=true
+        }
+        }
+        function fun1()
+        {
+            index--;
+            document.getElementById("dquote").innerHTML=mobile[index]
+            if(index==0)
+        {
+            document.getElementById("btnprev").disabled=true
+        }
+        if(index<(mobile.length-1))
+        {
+            document.getElementById("btnnext").disabled=false
+        }
+        }
+    </script>
+    <style>
+        #dquote
+        {
+            width: 10%;
+        }
+    </style>
+ </head>
+ <body>
+    <div style="display: flex;">
+        <input type="button" id="btnprev" disabled value="prev" onclick="fun1()">
+        <div id="dquote">"oppo"</div>
+        <input type="button" value="next" id="btnnext" onclick="fun2()">
+    </div>
+ </body>
+ </html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function fun1()
+        {
+            var email = prompt("enter your email to subscribe","manthan@gmail.com")
+            document.getElementById("pdata").innerHTML=email
+        }
+        function fun2()
+        {
+            
+            var x = confirm("are you sure you want to delete.")
+            if(x)
+        {
+            document.getElementById("pdata").innerHTML=""
+        }
+        else
+        {
+            alert("cancelled")
+        }
+        }
+    </script>
+</head>
+<body>
+    <input type="button" value="subscribe" onclick="fun1()">
+    <input type="button" value="delete" onclick="fun2()">
+    <p id="pdata"></p>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function fun1()
+        {
+            let i =(prompt("enter a number:"))
+            let t1= document.getElementById("t1")
+            let p1 = new Promise((resolve,reject)=>
+        {
+            setInterval(() => {
+                    if (isNaN(parseInt(i))) 
+                    {
+                        reject("Enter a valid number");
+                    } 
+                    else if (i % 2 == 0)
+                    {
+                        resolve("Entered number is even");
+                    } 
+                    else 
+                    {
+                        reject("Entered number is odd");
+                    }
+            }, 3000);
+        })
+        t1.innerHTML="this is after promise code."
+        p1.then((a)=>t1.innerHTML+="<br>"+a)
+        p1.catch((b)=>t1.innerHTML+="<br>"+b)
+        }
+    </script>
+</head>
+<body>
+    <input type="button" value="click here" onclick="fun1()">
+    <div id="t1"></div>
+</body>
+</html>

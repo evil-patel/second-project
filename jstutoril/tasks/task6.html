@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function fun1()
+        {
+            var t1 = document.getElementById("t1").value
+            var result = document.getElementById("result")
+            if(t1<100)
+        {
+            result.innerHTML="your bill is "+t1*5 + "RS"
+        }
+        else
+        {
+            result.innerHTML="your bill is "+ t1*7 + "RS"
+        }
+        }
+    </script>
+</head>
+<body>
+    <!-- 5.	Write a program to calculate electricity bill on the basis on units , when units are less that 100 calulate bill @5rs/unit other wise @7rs/unit (take units as input from user) -->
+     <p>
+        Enter unts : <input type="number" id="t1">
+     </p>
+     <input type="button" value="bill" onclick="fun1()">
+     <p id="result">
+
+     </p>
+</body>
+</html>

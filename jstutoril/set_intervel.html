@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function fun1()
+        {
+            let t1 = document.getElementById("t1")
+            let count=10;
+            // setInterval(() => {
+            //     count--
+            //     if(count==0)
+            // {
+            //     t1.innerHTML="time out"
+            // }
+            // else
+            // {
+            //     t1.innerHTML=count;
+            // }
+            // }, 1000);
+            let Interval1 = setInterval(() => {
+                count--
+                if(count==0)
+            {
+                clearInterval(Interval1)
+                t1.innerHTML="time out"
+            }
+            else
+            {
+                t1.innerHTML=count;
+            }
+            }, 1000);
+        }
+    </script>
+</head>
+<body onload="fun1()">
+    <p id="t1">10</p>
+</body>
+</html>

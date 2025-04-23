@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="takeinput.css">
+    <script>
+        function fun1()
+        {
+            var first = document.getElementById("t1").value;
+            document.getElementById("t3").value = "hello " + first
+            document.getElementById("t4").value = "good marning " + first
+            document.getElementById("t5").value = "good evening " + first
+            document.getElementById("t6").value = "good afternoon " + first
+        }
+    </script>
+</head>
+<body>
+    <p>
+        Enter name : <input type="text" id="t1">
+    </p>
+    <input type="button" value="submit" onclick="fun1()"><br>
+    <input style="height: 20px; width: 250px;" type="text" id="t3"><br>
+    <input style="height: 20px; width: 250px;"  type="text" id="t4"><br>
+    <input style="height: 20px; width: 250px;"  type="text" id="t5"><br>
+    <input style="height: 20px; width: 250px;"  type="text" id="t6"><br>
+</body>
+</html>

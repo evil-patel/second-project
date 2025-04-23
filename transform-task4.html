@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .moon1
+        {
+            background-color: black;
+            border-radius: 50%;
+            height: 100px;
+            width: 100px;
+            position: absolute;
+            left: 300px;
+            top: 500px;
+        }
+        .moon2
+        {
+            background-color: white;
+            /* border: 3px solid black; */
+            border-radius: 50%;
+            height: 120px;
+            width: 120px;
+            position: absolute;
+            left: 360px;
+            top: 390px;
+            animation: animation 5s 5;
+        }
+        @keyframes animation {
+            0%{position: absolute;left: 370px; top: 395px;}
+            50%{position: absolute; left: 299px; top: 490px;}
+            100%{position: absolute;left: 370px; top: 395px;}
+        }
+
+    </style>
+</head>
+<body>
+    <div class="moon1"></div>
+    <div class="moon2"></div>
+</body>
+</html>

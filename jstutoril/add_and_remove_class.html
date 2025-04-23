@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .a
+        {
+            height: 100px; width: 100px;
+            border-radius: 50%;
+            text-align: center;
+            align-content: center;
+            background-color: red;
+            color: aqua;
+            animation: animation 3s infinite;
+        }
+        @keyframes animation {
+            50%{text-align: center; align-content: center; rotate: 45deg;}
+        }
+        .b
+        {
+            height: 200px; width: 200px;
+            text-align: center;
+            border-radius: 50%;
+            align-content: center;
+            background-color: aqua;
+            color: red;
+            animation: animation1 2s infinite;
+        }
+        @keyframes animation1 {
+            50%{text-align: center; align-content: center; rotate: 90deg;}
+        }
+        .c
+        {
+            text-decoration: none;
+            text-transform: none;
+        }
+    </style>
+    <script>
+        function changeclass(c)
+        {
+            var t1 = document.getElementById("t1")
+            if(c == 1)
+            {
+                t1.className="a"
+            }
+            else if(c =='2')
+            {
+                t1.className="b"
+            }
+            else
+            {
+                t1.className="c"
+            }
+        }
+    </script>
+</head>
+<body>
+    <div id="t1">
+        Kem cho party!
+    </div>
+    <input type="button" value="apply a" onclick="changeclass('1')">
+    <input type="button" value="apply b" onclick="changeclass('2')">
+    <input type="button" value="apply normal" onclick="changeclass('3')">
+
+</body>
+</html>

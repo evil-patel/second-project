@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .navbar
+        {
+            display: flex;
+            height: 130px;
+            width: 100%;
+        
+        }
+         .navbar-item
+        {
+            width: 100%;
+            display: flex;
+            justify-content: right;
+            padding-right: 80px;
+            align-items: center;
+            gap: 50px;
+        }
+        .navbar-item>h3>a
+        {
+            text-decoration: none;
+            color: black;
+        }
+        .navbar-item>h3>a:hover
+        {
+            color: red;
+        }
+        .web-detail
+        {
+            background-image: url("./web-images/img2.jpg");
+            height: 540px;
+            width: auto;
+            background-repeat: no-repeat;
+            background-size: cover;
+            box-sizing: border-box;
+            margin: 20px;
+            padding-top: 250px;
+            font-size: 25px;
+            text-align: center;
+        }
+        .web-detail>p
+        {
+            width: 50%;
+            text-align: justify;
+            padding-left:370px;
+        }
+        .web-detail>a
+        {
+            text-decoration: none;
+            color: black;
+            padding: 10px;
+            background-color: yellow;
+            
+        }
+        .web-detail>a:hover
+        {
+            background-color: aqua;
+        }
+        .team-detail>h1
+        {
+            text-align: center;
+            font-size: 60px;
+            margin-bottom: 20px;
+            margin-top: 70px;
+        }
+        .team-info
+        {
+            margin: 20px;
+            padding-left: 70px;
+            padding-right: 70px;
+            display: flex;
+            gap: 30px;
+        }
+        .team-info>p
+        {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            padding: 40px;
+            line-height: 25px;
+            word-spacing: 1px;
+            font-size: 17px;
+            text-align: justify;
+        }
+        .team-info>p>img
+        {
+            padding-left: 40px;
+            padding-right: 40px;
+            padding-top: 0;
+            padding-bottom: 0;
+            height: 250px;
+            width: 250px;
+        }
+        .contact-info
+        {
+            padding-left: 60px;
+
+        }
+        .contact-info>h1>a
+        {
+            text-decoration: none;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar" id="1">
+        <img src="./web-images/img1.jpg" alt="">
+        <div class="navbar-item">
+        <h3><a href="#2">Details</a></h3>
+        <h3><a href="#3">Team</a></h3>
+        <h3><a href="#4">Contact</a></h3>
+        </div>
+    </div>
+    <div class="web-detail" id="2">
+        <h1>Our Creative Team</h1>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit repudiandae nam natus incidunt in harum vitae at reiciendis quidem ipsum iure, eveniet, fuga odio quasi ad vel odit animi molestias.</p>
+        <a href="#">LEARN MORE</a>
+    </div>
+    <div class="team-detail" id="3">
+        <h1>Meet The Team</h1>
+        <div class="team-info">
+            <p><img src="./web-images/img3.jpg" alt=""><br>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla et soluta eum unde voluptas libero laborum, asperiores rerum, quibusdam mollitia sequi odio magni amet harum sapiente necessitatibus aspernatur quis a.</p>
+            <p><img src="./web-images/img3.jpg" alt=""><br>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla et soluta eum unde voluptas libero laborum, asperiores rerum, quibusdam mollitia sequi odio magni amet harum sapiente necessitatibus aspernatur quis a.</p>
+            <p><img src="./web-images/img3.jpg" alt=""><br>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla et soluta eum unde voluptas libero laborum, asperiores rerum, quibusdam mollitia sequi odio magni amet harum sapiente necessitatibus aspernatur quis a.</p>
+        </div>
+        <div class="team-info">
+            <p><img src="./web-images/img3.jpg" alt=""><br>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla et soluta eum unde voluptas libero laborum, asperiores rerum, quibusdam mollitia sequi odio magni amet harum sapiente necessitatibus aspernatur quis a.</p>
+            <p><img src="./web-images/img3.jpg" alt=""><br>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla et soluta eum unde voluptas libero laborum, asperiores rerum, quibusdam mollitia sequi odio magni amet harum sapiente necessitatibus aspernatur quis a.</p>
+            <p><img src="./web-images/img3.jpg" alt=""><br>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla et soluta eum unde voluptas libero laborum, asperiores rerum, quibusdam mollitia sequi odio magni amet harum sapiente necessitatibus aspernatur quis a.</p>
+        </div>
+    </div>
+    <div>
+        <img height="450px" width="100%" src="./web-images/img4.jpg" alt="">
+    </div>
+    <br><br>
+    <div class="contact-detail" id="4">
+        <div class="contact-info">
+            <h3>JOIN OUR NEWS LETTER</h3>
+            <h1>Contact us</h1>
+            <p>3045 10 mihar complex, 123-1234-123<br>mon-fri:9am-8pm<br>sat-sun:9am-10pm</p>
+            <b>Contact@gmail.com</b>
+            <br><br>
+            <h1 ><a href="#1">Go To Top</a></h1>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function fun1()
+        {
+            counter=5;
+            var t1 = document.getElementById("t1");
+            for(var i=0;i<5;i++)
+        {
+            setTimeout(() => {
+                counter--;
+                console.log(counter)
+                t1.innerHTML = "Counter: " + counter;
+                if(counter==0)
+            {
+                t1.innerHTML =  "Timeout";
+                
+            }
+            }, (i+1)*1000)
+        }
+
+
+            // for (let i = 0; i <= 6; i++) {
+            //     setTimeout(() => {
+            //         if (counter >=0) {
+            //             t1.innerHTML = "Counter: " + counter;
+            //             counter--;
+            //         } else {
+            //             t1.innerHTML = "Counter: TIME OUT";
+            //         }
+            //     }, 1000);
+            // }
+        }
+    </script>
+</head>
+<body onload="fun1()">
+    <p id="t1">Counter: 5</p>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function fun1()
+        {
+            var n = parseInt(document.getElementById("t1").value)
+            var n1 = parseInt(document.getElementById("t11").value)
+            var n2 = parseInt(document.getElementById("t12").value)
+            var result = document.getElementById("result")
+            result.innerHTML=n1 + " " + n2
+            let i=1;
+           while(i<=(n-2))
+        {
+            let temp=n1;
+            n1=n2;
+            n2=temp+n2;
+            if(n2>n)
+        {
+            break;
+        }
+            result.innerHTML+=" "+n2;
+            i++;
+        }
+        }
+    </script>
+</head>
+<body>
+    
+    <p>
+        enter n1 : <input type="text" id="t11">
+        enter n2 : <input type="text" id="t12">
+        enter a : <input type="text" id="t1">
+    </p>
+    <input type="button" value="click" onclick="fun1()">
+    <p id="result"></p>
+</body>
+</html>

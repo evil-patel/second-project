@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+         let index=0;
+         function fun1()
+         {
+            var t1 = document.getElementById("t1")
+            var t4 = document.getElementById("t4")
+            t1.style.visibility="hidden"
+            t4.style.visibility="visible"
+        }
+        function fun3()
+        {
+            index++;
+            document.getElementById("show").innerHTML=index
+            if(index>0)
+        {
+            document.getElementById("t2").disabled=false
+        }
+        if(index==5)
+        {
+            document.getElementById("t3").disabled=true
+        }
+        }
+        function fun2()
+        {
+            index--;
+            document.getElementById("show").innerHTML=index;
+            var t1 = document.getElementById("t1")
+            var t4 = document.getElementById("t4")
+            if(index<5)
+        {
+            document.getElementById("t3").disabled=false
+        }
+        if(index==0)
+        {
+            document.getElementById("t2").disabled=true
+             t1.style.visibility="visible"
+             t4.style.visibility="hidden"
+        }
+        }
+    </script>
+</head>
+<body>
+    <div style="display: flex;">
+    <div id="t1">
+        <input type="button" value="ADD" onclick="fun1()">
+    </div>
+        <div style="display: flex; visibility: hidden;" id="t4"  >
+            <input type="button" id="t2" disabled value="-" onclick="fun2()">
+            <div id="show">0</div>
+            <input type="button" id="t3" value="+" onclick="fun3()">
+        </div>
+    </div>
+</body>
+</html>

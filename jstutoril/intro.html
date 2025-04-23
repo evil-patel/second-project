@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function fun1()
+        {
+            alert("Hello world , welcome to  js")
+            fun2()
+        }
+        function fun2()
+        {
+            alert("hello manthan")
+        }
+        function f1()
+        {
+            alert("good morning")
+        }
+        function f2()
+        {
+            alert("good evening")
+        }
+        function f3()
+        {
+            alert("good afternoon")
+        }
+        function f4()
+        {
+            alert("good night")
+        }
+        function f5(n)
+        {
+            alert("good morning " + n)
+        }
+        function f6(n)
+        {
+            alert("good evening " + n)
+        }
+        function f7(n)
+        {
+            alert("good afternoon " + n)
+        }
+        function f8(n)
+        {
+            alert(`good night ${n}`)
+        }
+    </script>
+    <style>
+        .container
+        {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        input[type="button"]
+        {
+            border: 1px solid orange;
+            color: orange;
+            height: 40px;
+        }
+        input[type="button"]:hover
+        {
+            color: aqua;
+            border: 5px solid aqua;
+            background-color: orange;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+    <input type="button" value="click here" onclick="fun1()">
+    <input type="button" value="click here" onclick="fun2()">
+    <input type="button" value="good morning" onclick="f1()">
+    <input type="button" value="good evening" onclick="f2()">
+    <input type="button" value="good afternoon" onclick="f3()">
+    <input type="button" value="good night" onclick="f4()">
+    <input type="button" value="good morning to you" onclick="f5('ram')">
+    <input type="button" value="good evening to you" onclick="f6('lakshman')">
+    <input type="button" value="good afternoon to you" onclick="f7('bharat')">
+    <input type="button" value="good night to you" onclick="f8('satrugna')">
+    </div>
+</body>
+</html>

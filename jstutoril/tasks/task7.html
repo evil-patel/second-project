@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function fun1()
+        {
+            var t1= document.getElementById("t1").value
+            var RS = document.getElementById("result")
+            if(t1%2==0)
+        {
+            RS.innerHTML="no is even"
+        }
+        else
+        {
+            RS.innerHTML="no is odd"
+        }
+        }
+    </script>
+</head>
+<body>
+    <!-- 6.	Write  a program to find a number is even or odd(take no as input ) -->
+     <p>
+        enter number: <input type="number" id="t1">
+     </p>
+     <input type="button" value="check" onclick="fun1()">
+     <p id="result">
+
+     </p>
+</body>
+</html>

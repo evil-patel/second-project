@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var items=[]
+        function fun1()
+        {
+            var t1 = document.getElementById("t1").value
+            var t2 = document.getElementById("t2").value
+            var t3 = parseInt(document.getElementById("t3").value)
+            let item = {iname:t1,icatagory:t2,iprice:t3}
+            items.push(item)
+            fun2()
+        }
+        function fun3(itemprice)
+        {
+            let index = items.findIndex((item)=>item.iprice==itemprice)
+            // alert(index)
+            items.splice(index,1)
+            fun2()
+        }
+        function fun2()
+        {
+            var result = document.getElementById("result")
+            var ui = items.map((item)=>
+        {
+            let remove = `<input type='button' value='delete' onclick='fun3("${item.iprice}")'/>`
+            let colorname ="green"
+            if(item.iprice>2000){colorname=("red")}
+           return "<p style ='background-color:"+colorname+"'> item name : " +item.iname + "<br>"+ "item catagory : " +item.icatagory + "<br>" + "item price : " + item.iprice + remove + "</p>"
+        }).join("")
+        result.innerHTML=ui
+        document.getElementById("t1").value=""
+        document.getElementById("t2").value=""
+        document.getElementById("t3").value=""
+        }
+        function finditem()
+        {
+            var n = document.getElementById("t4").value
+            var i = items.find((s)=>s.iname==n)
+            document.getElementById("pfind").innerHTML=JSON.stringify(i);
+        }
+    </script>
+</head>
+<body>
+    <p>
+        item name : <input type="text" id="t1"><br>
+        item catagory : <input type="text" id="t2"><br>
+        item price : <input type="text" id="t3"><br>
+    </p>
+    <input type="button" value="add" onclick="fun1()">
+    <p id="result"></p>
+    <div>
+        enter name : <input type="text" id="t4">
+    </div>
+    <input type="button" value="find" onclick="finditem()">
+    <p id="pfind"></p>
+</body>
+</html>

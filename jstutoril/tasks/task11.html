@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function fun1()
+        {
+            var RS= document.getElementById("result")
+            var i
+            RS.innerHTML=""
+            for(i=1;i<=50;i++)
+        {
+            if(i%5==0 && i%3==0)
+        {
+           RS.innerHTML=RS.innerHTML+" " + i
+
+        }
+        }
+        }
+    </script>
+</head>
+<body>
+    <!-- Write a program to find all the numbers between 1-50 which are divisible by both 3 and 5 -->
+     <input type="button" value="output" onclick="fun1()">
+     <p id="result"></p>
+</body>
+</html>

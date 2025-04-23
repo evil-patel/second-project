@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .image
+        {
+            height: 700px;
+            border: 2px solid purple;
+            background-image: url(web-images/background-image.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            box-sizing: border-box;
+           display: flex;
+           justify-content: center;
+           align-items: center;
+        }
+        .box>div
+        {
+           justify-content: center;
+           align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="image">
+        <div class="box" style="width:20%;background-color: white; height: 500px;
+        box-sizing: border-box;display: flex;flex-direction:column;gap:20px; ">
+        <div style="text-align: center;"><b>Login</b></div>
+        <div class="form-control">
+            <h3>Email</h3>
+            <input type="text">
+        </div>
+        <div class="form-control">
+            <h3>Password</h3>
+            <input type="text">
+        </div>
+        <div class="form-control">
+            <label for="">Forget your password?</label>
+        </div>
+        <div class="form-control" style="justify-content:center;">
+            <input style="background-color: blue; border-radius: 2px;" type="button" value="Login">
+        </div>
+        </div>
+    </div>
+</body>
+</html>

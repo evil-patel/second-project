@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="score_task.css">
+    <script>
+         let score = 0; 
+        function fun1(hide) {
+            hide.style.display="none"; 
+            score++; 
+            document.getElementById("score").innerHTML = "score:" + score; 
+        }
+    </script>
+</head>
+<body>
+    <p id="score">Score:0  </p>
+    <img src="images copy/image1.jpg" alt="" class="s1" onclick="fun1(this)">
+    <img src="images copy/image2.jpg" alt="" class="s2" onclick="fun1(this)">
+    <img src="images copy/image3.jpg" alt="" class="s3" onclick="fun1(this)">
+    <img src="images copy/image4.jpg" alt="" class="s4" onclick="fun1(this)">
+    <img src="images copy/image5.jpg" alt="" class="s5" onclick="fun1(this)">
+    <img src="images copy/image6.jpg" alt="" class="s6" onclick="fun1(this)">
+</body>
+</html>

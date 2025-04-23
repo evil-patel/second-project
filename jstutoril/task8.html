@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function fun1()
+        {
+            
+        var t1 = document.getElementById("t1");
+        var t2 = document.getElementById("t2");
+        var result = document.getElementById("t3");
+
+        var a = parseFloat(t1.value);
+        var b = parseFloat(t2.value);
+        var c = a+b;
+
+        result.innerHTML="SUM IS" +c
+        }
+        function fun2()
+        {
+            
+        var t1 = document.getElementById("t1");
+        var t2 = document.getElementById("t2");
+        var result = document.getElementById("t3");
+
+        var a = parseFloat(t1.value);
+        var b = parseFloat(t2.value);
+        var c = a-b;
+
+        result.innerHTML="SUB IS " +c
+        }
+        function fun3()
+        {
+            
+        var t1 = document.getElementById("t1");
+        var t2 = document.getElementById("t2");
+        var result = document.getElementById("t3");
+
+        var a = parseFloat(t1.value);
+        var b = parseFloat(t2.value);
+        var c = a*b;
+
+        result.innerHTML="MULTIPLY IS " +c
+        }
+        function fun4()
+        {
+            
+        var t1 = document.getElementById("t1");
+        var t2 = document.getElementById("t2");
+        var result = document.getElementById("t3");
+
+        var a = parseFloat(t1.value);
+        var b = parseFloat(t2.value);
+        var c = a/b;
+
+        result.innerHTML="DIV IS " +c
+        }
+        function fun5()
+        {
+            
+        var t1 = document.getElementById("t1");
+        var t2 = document.getElementById("t2");
+        var result = document.getElementById("t3");
+
+        var a = parseFloat(t1.value);
+        var b = parseFloat(t2.value);
+        var c = a%b;
+
+        result.innerHTML="MODUL IS " +c
+        }
+        function fun6()
+        {
+            
+        var t1 = document.getElementById("t1");
+        var t2 = document.getElementById("t2");
+        var result = document.getElementById("t3");
+
+        var a = parseFloat(t1.value);
+        var b = parseFloat(t2.value);
+        var c = (a+b)/2;
+
+        result.innerHTML="average " +c;
+        }
+    </script>
+</head>
+<body>
+    <p>
+        enter a : <input type="number" name="" id="t1">
+        enter b : <input type="number" name="" id="t2">
+    </p>
+    <input type="button" value="+" onclick="fun1()">
+    <input type="button" value="-" onclick="fun2()">
+    <input type="button" value="*" onclick="fun3()">
+    <input type="button" value="/" onclick="fun4()">
+    <input type="button" value="%" onclick="fun5()">
+    <input type="button" value="AVERAGE" onclick="fun6()">
+
+
+    <p id="t3">
+    </p>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function fun1()
+        {
+            var i=1;
+            var t1 = document.getElementById("t1").value
+            var t2 = document.getElementById("t2")
+            for(i=1;i<=10;i++)
+        {
+            t2.innerHTML+=(t1+" x "+i+ " = ")+( t1*i)+"<br>";        
+        }
+        }
+    </script>
+</head>
+<body>
+    <!-- Write a program to print table of any no entered by user -->
+     <p>
+        Enter the no : <input type="number" id="t1">
+     </p>
+     <input type="button" value="tabel" onclick="fun1()">
+     <p id="t2">
+
+     </p>
+</body>
+</html>

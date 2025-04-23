@@ -1,0 +1,63 @@
+img
+{
+    height: 100px;
+    width: 100px;
+    /* border-radius: 50%; */
+    /* display: none; */
+}
+.s1
+{
+    position: absolute;
+    left: 1350px;
+    top: 750px;
+    animation: animation 3.5s 1;
+    visibility: hidden;
+}
+.s2
+{
+    position: absolute;
+    left: 1150px;
+    top: 750px;
+    animation: animation 3s  1;
+    visibility: hidden;
+}
+.s3
+{
+    position: absolute;
+    left: 950px;
+    top: 750px;
+    animation: animation 4s  1;
+    visibility: hidden;
+
+}
+.s4
+{
+    position: absolute;
+    left: 650px;
+    top: 750px;
+    animation: animation 4.3s 1;
+    visibility: hidden;
+
+}
+.s5
+{
+    position: absolute;
+    left: 450px;
+    top: 750px;
+    animation: animation 6s 1;
+    visibility: hidden;
+
+}
+.s6
+{
+    position: absolute;
+    left: 250px;
+    top: 750px;
+    animation: animation 4.5s 1;
+    visibility: hidden;
+
+}
+@keyframes animation {
+    0%{top:550px;visibility: visible;}
+    100%{top: 10px;display: none;}
+}

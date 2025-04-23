@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var items=[2,3,4,5,6,7,8,9,10]
+        function odd()
+        {
+            var ui = items.filter((item)=>(item%2!=0))
+
+            document.getElementById("show").innerHTML=ui
+        }
+        function even()
+        {
+            var ui = items.filter((item)=>(item%2==0))
+
+            document.getElementById("show").innerHTML=ui
+        }
+        function count1()
+        {
+            var ui = items.filter((item)=>(item%2!=0))
+
+            document.getElementById("show").innerHTML=ui.length
+        }
+        function count2()
+        {
+            var ui = items.filter((item)=>(item%2==0))
+
+            document.getElementById("show").innerHTML=ui.length
+        }
+    </script>
+</head>
+<body>
+    <input type="button" value="showodd" onclick="odd()">
+    <input type="button" value="showeven" onclick="even()">
+    <input type="button" value="show_odd_count" onclick="count1()">
+    <input type="button" value="show_even_count" onclick="count2()">
+    <div id="show">
+
+    </div>
+</body>
+</html>

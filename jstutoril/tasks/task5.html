@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function fun1()
+        {
+        var t1= document.getElementById("t1").value;
+        var result = document.getElementById("result")
+        if(t1>=0)
+    {
+        result.innerHTML="number is greater then zero."   
+    }
+    else
+    {
+        result.innerHTML="number is less then zero."
+    }
+    }
+    </script>
+</head>
+<body>
+    <!-- Write a program to find a number is greater than 0 or not  (take no as input ) -->
+     <p>
+        enter no : <input type="number" id="t1">
+     </p>
+     <input type="button" value="check" onclick="fun1()">
+     <p id="result">
+
+     </p>
+</body>
+</html>

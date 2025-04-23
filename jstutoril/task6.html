@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="takeinput.css">
+    <script>
+        function fun1()
+        {
+            var name = document.getElementById("t1").value;
+            document.getElementById("t2").innerHTML = "HELLO HOE ARE YOU";           
+        }
+        function fun2()
+        {
+            var name = document.getElementById("t1").value;
+            document.getElementById("t2").innerHTML = "welcome " + name;
+        }
+        function fun3()
+        {
+            var name = document.getElementById("t1").value;
+            document.getElementById("t2").innerHTML = "hi " + name;
+        }
+        function fun4()
+        {
+            var name = document.getElementById("t1").value;
+            document.getElementById("t2").innerHTML = "good morning " + name;
+        }
+    </script>
+</head>
+<body>
+    <p>
+        Enter your name : <input style="text-transform: uppercase;" type="text" name="" id="t1">
+    </p>
+    <input type="button" value="HELLO" onclick="fun1()">
+    <input type="button" value="WELCOME" onclick="fun2()">
+    <input type="button" value="HI" onclick="fun3()">
+    <input type="button" value="GOOD MORNING" onclick="fun4()">
+    <p id="t2">
+       
+    </p>      
+    </span>
+</body>
+</html>

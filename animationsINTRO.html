@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box
+        {
+            height:100px;
+            width:100px;
+            background-color:red;
+            animation-name:boxanimation;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+
+        }
+
+        @keyframes boxanimation {
+            from{background-color: yellow;
+            width:100px;}
+            to{background-color: red;width:500px;}
+        }
+        @keyframes animate2 {
+            0%{background-color: yellow;width: 100px;height:100px;
+                border-radius: 50%;}
+            
+            50%{background-color: red;width: 500px;border-radius: 0;
+                height:500px;}
+            100%{background-color: yellow;width: 100px;border-radius: 50%;
+                height:100px;}
+        }
+        .box1
+        {
+            height:100px;
+            width:100px;
+            background-color:red;
+            animation-name:animate2;
+            animation-duration:10s;
+            animation-iteration-count: infinite;
+        }
+    </style>
+</head>
+<body>
+    <div class="box123">
+
+    </div>
+    <div class="box1">
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var number=[2,3,4,5]
+        function fun1()
+        {
+            var Square = number.map((itemname)=>
+        {
+            return "<p> square is " + itemname*itemname + "</p>"
+        })
+        document.getElementById("show").innerHTML=Square
+        }
+
+
+        function fun2()
+        {
+            var Square = number.map((itemname)=>
+        {
+            if(itemname%2==0)
+        {
+            return "<p> number is " + itemname + "</p>"
+        }
+        })
+        console.log(Square)
+        document.getElementById("show").innerHTML=Square
+        }
+    </script>
+</head>
+<body>
+    <input type="button" value="evenno" onclick="fun2()">
+    <input type="button" value="square" onclick="fun1()">
+    <div id="show">
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function chk()
+        {
+        var name = document.getElementById("name");
+        var marks = document.getElementById("marks");
+        var result = document.getElementById("result");
+
+        var marks1 = parseInt(marks.value);
+
+        if(marks1>= 50)
+        {
+            result.innerHTML = "you are pass"
+            result.style.color="green"
+            result.style.backgroundColor = "black"
+        }
+        else
+        {
+            result.innerHTML = "you are fail"
+            result.style.color = "red"
+            result.style.backgroundColor = "black"
+        }
+        name.value = ""
+        marks.value = ""
+    }
+    </script>
+</head>
+<body>
+    <p>
+        Enter your name : <input type="text" id="name">
+        Enter your marks : <input type="number" id="marks">
+        <input type="button" value="check" onclick="chk()">
+    </p>
+    <p id="result">
+
+    </p>
+</body>
+</html>

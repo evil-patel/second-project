@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let Interval1
+        function fun1()
+        {
+            let seconds=0;
+            let p2 = document.getElementById("p2")
+            let minuts = 0;
+            let p1 = document.getElementById("p1")
+            Interval1 = setInterval(() => {
+                seconds++;
+                if(seconds==59)
+        {
+            seconds=0;
+            minuts++;
+        }
+        if(seconds<=9)
+        {
+            p2.innerHTML="0"+seconds
+        }
+        else
+        {
+            p2.innerHTML=seconds
+        }
+
+        p1.innerHTML=minuts
+        }, 200);
+        }
+        function fun2()
+        {
+            clearInterval(Interval1)
+        }
+    </script>
+</head>
+<body>
+   <div style="display: flex;"> <p id="p1">00</p>
+    <p>:</p>
+    <p id="p2">00</p></div>
+    <input type="button" value="clock" onclick="fun1()">
+    <input type="button" value="stop" onclick="fun2()">
+
+</body>
+</html>

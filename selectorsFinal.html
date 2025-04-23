@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input[type="text"]
+        {
+            border:0
+        }
+        .form-control
+        {
+            display: flex;
+            flex-wrap: nowrap;
+        }
+        .form-control>label
+        {
+            width: 25%;
+            padding-top:10px;            
+        }
+        .form-control>input[type="text"]
+        {
+            width:50%;
+            height:40px;
+        }
+        .form-control>input[type="button"]
+        {
+            width:30%;
+            height:40px;
+            background-color: transparent;
+            border-color: white;
+
+        }
+    </style>
+</head>
+<body>
+    <div style="width:50%;background-color: orange;
+    padding: 50px;
+    box-sizing: border-box;
+    display: flex;flex-direction: column;gap:20px;">
+    <div class="form-control">
+        <label>Name</label><input type="text">
+    </div>
+    <div class="form-control">
+        <label>Email</label><input type="text">
+    </div>
+    <div class="form-control">
+        <label>PAssoword</label><input type="text">
+    </div>
+    <div class="form-control">
+        <label>Type</label><input type="radio" name="t" id="t1"><label for="t1">Admin</label>
+        <input type="radio" name="t"id="t2"><label for="t2">User</label>
+    </div>
+    <div class="form-control" style="justify-content:center;">
+        <input type="button" value="Click here ">
+
+    </div>
+
+</div>
+</body>
+</html>

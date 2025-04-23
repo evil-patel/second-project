@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="takeinput.css">
+    <script>
+        function fun1()
+        {
+            var first = document.getElementById("t1").value;
+            var last = document.getElementById("t2").value;
+            var name = document.getElementById("t3").value = first +" " +last
+        }
+    </script>
+</head>
+<body>
+    <p>
+        Enter first name : <input type="text" id="t1">
+        Enter last name : <input type="text"  id="t2">
+    </p>
+    <input type="button" value="submit" onclick="fun1()">
+    <input type="text" id="t3">
+</body>
+</html>

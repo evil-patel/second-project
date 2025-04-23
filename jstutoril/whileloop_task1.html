@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function fun1()
+        {
+            var n = parseInt(document.getElementById("t1").value)
+            var result = document.getElementById("result")
+            let msg= "number is prime"
+            let i=2;
+            while(i<n)
+        {
+            if(n%i==0)
+        {
+            msg="number is not prime."
+            break;
+        }
+          
+            i++;
+        }
+        result.innerHTML=msg;
+        }
+    </script>
+</head>
+<body>
+    <p>
+        enter a : <input type="text" id="t1">
+    </p>
+    <input type="button" value="click" onclick="fun1()">
+    <p id="result"></p>
+</body>
+</html>

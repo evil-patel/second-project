@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function fun1()
+        {
+            // multiple ways to write an  array:-
+            // var car = [] (1at way)
+            // var cars= new array()  (2nd way)
+            // car[0]="bmw"
+            // car[1]="merceds"
+            var car = ["alto","mercedes","bmw","nano","creata","ferari"]
+            var dcars = document.getElementById("dcars")
+            dcars.innerHTML=""
+            for(i=0;i<car.length;i++)
+        {
+            dcars.innerHTML+="car name is " + car[i] + "<br>"
+        }
+        }
+    </script>
+</head>
+<body>
+   <input type="button" value="showarray" onclick="fun1()">
+   <div id="dcars">
+
+   </div> 
+</body>
+</html>

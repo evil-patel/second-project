@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container
+        {
+            display: flex;
+            gap: 25px;
+        }
+        .container>div
+        {
+            height: 150px;
+            width: 150px;
+            border: 1px,solid,black;
+        }
+      
+        .c1
+        {
+  background-color: red;
+            width: 330px;
+           height: 330px; 
+            gap: 10px;
+            box-sizing: border-box;
+            display: flex;
+            padding: 10px;
+            flex-wrap: wrap;
+        }
+        .c1>div
+        {
+            /* box-sizing: border-box; */
+            height: 150px;
+            width: 150px;
+            
+        }
+        .c2
+        {
+            background-color: rgb(0, 136, 255);
+            width: 330px;
+            height: 330px; 
+            gap: 10px;
+            box-sizing: border-box;
+            display: flex;
+            padding: 10px;
+            flex-wrap: wrap;
+        }
+        .c2>div
+        {
+            /* box-sizing: border-box; */
+            height: 150px;
+            width: 150px;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div style="border-radius:35px ; background-color: red;" ></div>
+        <div style="border-top-right-radius: 50%; background-color: rebeccapurple;" ></div>
+        <div style="border-bottom-right-radius: 50%; background-color: rebeccapurple;" ></div>
+        <div style="border-top-left-radius: 50%; background-color: rebeccapurple;" ></div>
+    </div>
+    <br><br><br><br><br>
+    <!-- <div class="content1"> -->
+        <div class="c1">
+        <div style="border-top-left-radius: 50%; background-color: rgb(238, 255, 0)" ></div>
+        <div style="border-top-right-radius: 50%; background-color: rgb(238, 255, 0)" ></div>
+        <div style="border-bottom-left-radius: 50%; background-color: rgb(238, 255, 0)" ></div>
+        <div style="border-bottom-right-radius: 50%; background-color: rgb(238, 255, 0)" ></div>
+            </div>
+    <!-- </div> -->
+    <br><br><br><br><br>
+    <!-- <div class="content2"> -->
+        <div class="c2">
+        <div style="border-bottom-left-radius: 50%; border-top-right-radius: 50%; background-color: red" ></div>
+        <div style="border-top-left-radius: 50%; border-bottom-right-radius: 50%; background-color: red" ></div>
+            <div style="border-top-left-radius: 50%; border-bottom-right-radius: 50%; background-color: red" ></div>
+            <div style="border-top-right-radius: 50%; border-bottom-left-radius: 50%; background-color: red" ></div>
+        <!-- </div> -->
+    </div>
+</body>
+</html>

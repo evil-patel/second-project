@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let add=()=>
+        {
+            var a = parseInt(document.getElementById("a").value)
+            var b = parseInt(document.getElementById("a").value)
+            alert("addition of a and b is = " + (a+b))
+        }
+        let sub=()=>
+        {
+            var a = parseInt(document.getElementById("a").value)
+            var b = parseInt(document.getElementById("a").value)
+            alert("substraction of a and b is = " + (a-b))
+        }
+        let mul=()=>
+        {
+            var a = parseInt(document.getElementById("a").value)
+            var b = parseInt(document.getElementById("a").value)
+            alert("multiplication of a and b is = " + (a*b))
+        }
+        let div=()=>
+        {
+            var a = parseInt(document.getElementById("a").value)
+            var b = parseInt(document.getElementById("a").value)
+            alert("division of a and b is = " + (a/b))
+        }
+        let mod=()=>
+        {
+            var a = parseInt(document.getElementById("a").value)
+            var b = parseInt(document.getElementById("a").value)
+            alert("module of a and b is = " + (a%b))
+        }
+    </script>
+</head>
+<body>
+    <p>
+        enter no1 : <input type="text" id="a">
+        enter no2 : <input type="text"id="b">
+    </p>
+    <input type="button" value="addition" onclick="add()">
+    <input type="button" value="substraction" onclick="sub()">
+    <input type="button" value="multiplication" onclick="mul()">
+    <input type="button" value="division" onclick="div()">
+    <input type="button" value="module" onclick="mod()">
+</body>
+</html>

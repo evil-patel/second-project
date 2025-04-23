@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function chk()
+        {
+        var age = document.getElementById("age");
+        var result = document.getElementById("result");
+
+        var age1 = parseInt(age.value);
+
+        if(age1>18)
+        {
+            result.innerHTML = "you are elegible for vote"
+            result.style.color="green"
+            result.style.backgroundColor = "black"
+        }
+        else
+        {
+            result.innerHTML = "you are not elegible to vote"
+            result.style.color = "red"
+            result.style.backgroundColor = "black"
+        }
+        age.value= ""
+    }
+    </script>
+</head>
+<body>
+    <p>
+        Enter your age : <input type="text" id="age">
+        <input type="button" value="check" onclick="chk()">
+    </p>
+    <p id="result">
+
+    </p>
+</body>
+</html>

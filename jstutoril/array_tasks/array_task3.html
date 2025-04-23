@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var items=["car","mobile","ac"]
+        var i=0;
+       
+        var next= "<input type='button'  value='showenext' onclick='fun2()'>"
+        var prev= "<input type='button' id='btnprev' value='showprev' onclick='fun3()'>"
+        function fun1()
+        {
+            document.getElementById("show").innerHTML=prev+items[0]+next
+        }
+        function fun2()
+        {
+            if(i<(items.length-1))
+        {
+            i++;
+            document.getElementById("show").innerHTML=prev+items[i]+next
+        }
+        else{
+            alert("no more elements")
+        }
+        }
+        function fun3()
+        {
+            if(i>0)
+        {
+            i--;
+            document.getElementById("show").innerHTML=prev+items[i]+next
+        }
+        else
+        {
+            alert("no more previous element")
+        }
+        }
+
+    </script>
+</head>
+<body>
+    <input type="button" value="showvalue" onclick="fun1()">
+    <div id="show"></div>
+</body>
+</html>

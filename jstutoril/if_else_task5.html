@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function fun1()
+        {
+            var name =document.getElementById("name")
+            var number = document.getElementById("number")
+            var t1 = document.getElementById("t1")
+        if(name.value == "" || number.value=="")
+        {
+            alert("Enter the field detail it cannot be empty.")
+        }
+        else if(!isNaN(name.value))
+        {
+            alert("Enter name in name field it cannot be number.")
+        } 
+        else
+        {
+            var number1 = parseInt(number.value);
+            if(number1<0)
+            {
+                alert("Units cannot be in negative.")
+            }
+            else if(number1<=50)
+            {
+                // t1.style.backgroundColor="black";
+                t1.style.color="green";
+                t1.innerHTML="Owner name: " + name.value +"<br>" + "Units consume: "+ number.value + "<br>" + "Your Bill is: " + number1*5 + " Rs";
+            }
+            else if(number1<=70)
+            {
+                // t1.style.backgroundColor="black";
+                t1.style.color="yellow";
+                t1.innerHTML="Owner name: " + name.value +"<br>" + "Units consume: "+ number.value + "<br>" + "Your Bill is: " + number1*6 + " Rs";
+            }
+            else
+            {
+                if(number1<=100)
+            {
+                // t1.style.backgroundColor="black";
+                t1.style.color="orange";
+                t1.innerHTML="Owner name: " + name.value +"<br>" + "Units consume: "+ number.value + "<br>" + "Your Bill is: " + number1*7 + " Rs";
+            }
+                else
+            {
+                // t1.style.backgroundColor="black";
+                t1.style.color="red";
+                t1.innerHTML="Owner name: " + name.value +"<br>" + "Units consume: "+ number.value + "<br>" + "Your Bill is: " + number1*10 +" Rs";
+            }
+            }
+        }
+        }
+    </script>
+</head>
+<body>
+    <p>
+        Enter Your Name: <input type="text" placeholder="name" id="name"><br>
+        Enter Unit Consume: <input type="number" placeholder="Units" id="number"><br>
+        <input type="button" value="check" onclick="fun1()"><br>
+        <p style="font-size:20px; align-content: center; width: 250px;" id="t1"></p>
+    </p>
+    
+</body>
+</html>

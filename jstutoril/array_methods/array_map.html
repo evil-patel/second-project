@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var items=["car","mobile","ac"]
+        function showitems()
+        {
+            var ui = items.map((itemname)=>
+        {
+           return "<p> item is " + itemname + "</p>"
+        })
+        document.getElementById("ditems").innerHTML=ui
+        }
+    </script>
+</head>
+<body>
+    <input type="button" value="showItems" onclick="showitems()">
+    <div id="ditems">
+
+    </div>
+</body>
+</html>

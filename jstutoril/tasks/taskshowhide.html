@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #container
+        {
+            height: 100dvh;
+            background-color: antiquewhite;
+        }
+        #box
+        {
+            height: 100px;
+            width: 100px;
+            background-color: red;
+            visibility: hidden;
+            align-content: center;
+            text-align: center;
+        }
+    </style>
+    <script>
+        function fun1()
+        {
+            var box = document.getElementById("box")
+            var container =document.getElementById("container")
+            box.style.visibility="visible"
+            // var hide = document.getElementById("hide").style.visibility="hidden"
+
+            container.style.pointerEvents="none" /* Disables clicks & interactions */
+            container.style.backgroundColor="grey"
+            
+            box.style.pointerEvents="auto"
+        }
+        function fun2()
+        {
+            var t1 = document.getElementById("t1")
+            t1= box.style.visibility="hidden"
+                container.style.backgroundColor="antiquewhite"
+            // t1= hide.style.visibility="visible"
+            document.getElementById("container").style.pointerEvents="auto"
+
+
+        }
+    </script>
+</head>
+<body>
+    <div id="container">
+        <input id="hide" type="button" value="showdiv" onclick="fun1()">
+        <div class="h1" id="box">
+            <input id="t1" type="button" value="hidediv" onclick="fun2()">
+        </div>
+    </div>
+</body>
+</html>

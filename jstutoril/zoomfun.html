@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #t1
+        {
+            font-size: 20px;
+        }
+    </style>
+    <script>
+        var f =20;
+        function fun1(c)
+        {
+        if(c == "+")
+        {
+            f = f+4;
+        }
+        else
+        {
+         if(c == "-")
+        {
+            f= f-4;
+        }
+        else
+        {
+            f=20
+        }
+        }
+        document.getElementById("t1").style.fontSize= f + "px"
+        }
+    </script>
+</head>
+<body>
+    <input type="button" value="+" onclick="fun1('+')">
+    <input type="button" value="original" onclick="fun1('original')">
+    <input type="button" value="-" onclick="fun1('-')">
+    <div id="t1">
+        <h1>hello</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae alias, rerum illo unde sint voluptatum possimus dolor numquam autem dolorem iste, esse nulla voluptatem consectetur nesciunt ab itaque deserunt. Recusandae!</p>
+        <h3>good byy!</h3>
+    </div>
+</body>
+</html>

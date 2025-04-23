@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function fun1(c)
+        {
+            var txtfirst =document.getElementById("first");
+            var txtsecond = document.getElementById("second");
+            var result = document.getElementById("result");
+        if(txtfirst.value== "" || txtsecond.value== "" || isNaN(txtfirst.value) || isNaN(txtsecond.value))
+        {
+            alert("Enter both values correctly do not enter character in fields and dont leave values blank. ")
+        }
+        else
+        {
+            first= parseFloat(txtfirst.value);
+            second = parseFloat(txtsecond.value);
+            switch(c)
+            {
+                case "+":
+                    result.innerHTML='sum of '+ first +" and"+ second+" is "+ (first+second);
+                    break;
+                case "-":
+                    result.innerHTML= first-second;
+                    break;
+                case "*":
+                    result.innerHTML= first*second;
+                    break;
+                case "/":
+                    result.innerHTML= first/second;
+                    break;
+                case "%":
+                     result.innerHTML= first%second;
+                    break;
+                default:
+                    result.innerHTML="enter a valid case";
+            }
+        }
+        }
+        txtfirst.value== ""
+        txtsecond.value==""
+    </script>
+</head>
+<body>
+    <p>
+        Enter the first Value: <input type="text" id="first"><br>
+        Enter the Second Value: <input type="text" id="second"><br>
+        <input type="button" value="+" onclick="fun1('+')">
+        <input type="button" value="-" onclick="fun1('-')">
+        <input type="button" value="*" onclick="fun1('*')">
+        <input type="button" value="/" onclick="fun1('/')">
+        <input type="button" value="%" onclick="fun1('%')">
+        <p id="result"></p>
+
+    </p>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="takeinput.css">
+    <script>
+        function fun1()
+        {
+            var name = document.getElementById("name").value;
+            var age = document.getElementById("age").value;
+            var marks = document.getElementById("marks").value;
+            alert(`Your Name is ${name}`);
+            alert(`Your Age is ${age}`);
+            alert(`Your Marks are ${marks}`);
+            alert(`You are ${name} Your age is ${age} and your marks are ${marks}`);
+            alert(`You are pass`);
+        }
+    </script>
+</head>
+<body>
+    <div>
+        <p>
+            Enter Your Name : <input type="text" id="name">
+            Enter Your Age : <input type="text" id="age">
+            Enter Your Marks : <input type="number" name="" id="marks">
+        </p>
+        <input type="button" value="Submit" onclick="fun1()">
+    </div>
+</body>
+</html>

@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web-task</title>
+    <style>
+        .menu
+        {
+            background-color: rgb(255, 255, 255);
+            box-sizing: border-box;
+            height: 50px;
+            width: 100%;
+            padding-top: 17px;
+            display: flex;
+            justify-content: center;
+            gap: 45px;
+            position: fixed;
+        }
+        .menu-image>img
+        {
+            box-sizing: border-box;
+            padding: 30px;
+            height: 500px;
+            width: 100%;
+        }
+        .menu-team
+        {
+            /* background-color: blue; */
+            display: flex;
+            justify-content: space-evenly;
+            padding-top: 50px;
+            padding-bottom: 50px;
+            margin: 40px;
+        }
+        .team-member
+        {
+            background-color:  whitesmoke;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            gap: 15px;
+            height: 230px;
+            width: 11%;
+            justify-content: center;
+        }
+        .team-member>img
+        {
+            height: 100px;
+        }
+        .destination
+        {
+            display: flex;
+           width: 100%;
+           /* background-color: aqua; */
+           /* gap:25px;*/
+            justify-content: space-evenly;
+            padding: 50px;
+            box-sizing: border-box;
+        }
+        .destination-content
+        {
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            gap:15px;
+            width: 22%;
+            text-align: center;
+            border: 1px solid rgb(249, 240, 240);
+
+        }
+        .destination-image>img
+        {
+            height: 210px;
+            width: 325px;
+         
+        }
+        .destination-content>div>input
+        {
+            height:30px;
+            width: 150px;
+        }
+        .destination-content>div>input:hover
+        {
+            background-color: aqua;
+            color: black;
+        }
+        .bg-image
+        {
+            background-color: aliceblue;
+            height: 500px;
+            width: 100%;
+            padding-top: 50px ;
+        }
+        .stories
+        {
+            display: flex;
+            justify-content: center;
+            gap:25px;
+        }
+        .stories-cities1
+        {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            gap: 20px;
+            height: 550px;
+            width: 650px;
+            /* border: 1px solid rgb(214, 214, 214); */
+        }
+        .stories-cities2
+        {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            gap: 20px;
+            width: 350px;
+            /* border: 1px solid black; */
+        }
+        .stories-cities3
+        {
+            display: flex;
+            flex-direction: column;
+            padding: 20px;
+            gap: 40px;
+            width: 250px;
+            /* border: 1px solid black; */
+        }
+        .travel
+        {
+            display: flex;
+            justify-content: center;
+            gap:25px;
+        }
+        .travel1
+        {
+            display: flex;
+            flex-direction: column;
+            height: 500px;
+            text-align: left;
+            box-sizing: border-box;
+            padding: 60px;
+            gap: 30px;
+            width: 45%;
+            /* border: 1px solid black; */
+        }
+        .travel2
+        {
+            box-sizing: border-box;
+            width: 45%;
+            /* border: 1px solid black; */
+        }
+        .footer1
+        {
+            box-sizing: border-box;
+            height: 500px;
+            /* width: 100%; */
+            background-color: #f7f2ee;
+            margin: 30px;
+        }
+        .footer2
+        {
+            padding-top: 90px;
+            text-align: center;
+        }
+        .footer3
+        {
+            justify-content: center;
+            display: flex;
+            margin: 60px;
+            gap: 50px;   
+        }
+        .bottom
+        {
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+        }
+        .b1
+        {
+            height: 350px;
+            border: 1px solid black;
+            width: 30%;
+        }
+        .b2
+        {
+            height: 350px;
+            border: 1px solid black;
+            width: 30%;
+        }
+        .b3
+        {
+            height: 350px;
+            border: 1px solid black;
+            width: 30%;
+        }
+    </style>
+</head>
+<body>
+    <div class="menu ">
+        <div>HOME</div>
+        <div>PAGES</div>
+        <div>TRAVELS</div>
+        <div><i><b>Backpack Travels</b></i></div>
+        <div>BLOG</div>
+        <div>SHOP</div>
+        <div>ELEMENTS</div>
+    </div>
+
+
+    <div class="menu-image">
+        <img src="web-images/wb02.jpg" alt="">
+    </div>
+
+
+    <div class="menu-team">
+        <div class="team-member">
+            <img src="web-images/wb03.jpg" alt="">
+            <div>BEACHES</div>
+            <div>4 Destinations</div>
+        </div>
+        <div class="team-member">
+            <img src="web-images/wb04.jpg" alt="">
+            <div>BEACHES</div>
+            <div>4 Destinations</div>
+        </div>
+        <div class="team-member">
+            <img src="web-images/wb05.jpg" alt="">
+            <div>BEACHES</div>
+            <div>4 Destinations</div>
+        </div>
+        <div class="team-member">
+            <img src="web-images/wb06.jpg" alt="">
+            <div>BEACHES</div>
+            <div>4 Destinations</div>
+        </div>
+        <div class="team-member">
+            <img src="web-images/wb07.jpg" alt="">
+            <div>BEACHES</div>
+            <div>4 Destinations</div>
+        </div>
+        <div class="team-member">
+            <img src="web-images/wb08.jpg" alt="">
+            <div>BEACHES</div>
+            <div>4 Destinations</div>
+        </div>
+    </div>
+
+
+    <h1 style="text-align: center; font-size: 50px;">DESTINATIONS</h1>
+    <p  style="text-align: center;">We are the Backpack Traveler, your favorite travel assistants!</p>
+
+    
+    <div class="destination">
+        <div class="destination-content">
+            <div class="destination-image">
+                <img src="web-images/img5.jpg" class="circle" alt="">
+                <img src="web-images/img6.jpg" alt="">
+            </div>
+            <div><i><b>peru</b></i></div>
+            <div><i><b>Low-Budget</b></i></div>
+            <div><input type="button" value="Explore"></div>
+        </div>
+
+        <div class="destination-content">
+            <div class="destination-image">
+                <img src="web-images/img7.jpg" alt="">
+                <img src="web-images/img8.jpg" alt="">
+            </div>
+            <div><i><b>peru</b></i></div>
+            <div><i><b>Low-Budget</b></i></div>
+            <div><input type="button" value="Explore"></div>
+        </div>
+    
+        <div class="destination-content">
+            <div class="destination-image">
+                <img src="web-images/img9.jpg" alt="">
+                <img src="web-images/img10.jpg" alt="">
+            </div>
+            <div><i><b>peru</b></i></div>
+            <div><i><b>Low-Budget</b></i></div>
+            <div><input type="button" value="Explore"></div>
+        </div>
+
+        <div class="destination-content">
+            <div class="destination-image">
+                <img src="web-images/img11.jpg" alt="">
+                <img src="web-images/img12.jpg" alt="">
+            </div>
+            <div><i><b>peru</b></i></div>
+            <div><i><b>Low-Budget</b></i></div>
+            <div><input type="button" value="Explore"></div>
+        </div>
+    </div>
+
+    <div class="bg-image">
+       <div style="text-align: center; font-size: 50px;">OUR TRAVEL GUIDES</div>
+       <p style="text-align: center; font-size: 30px;">Read about your favorite travel destinations & our adventures</p>
+       <div class="menu-team">
+        <div class="team-member">
+            <img src="web-images/wb03.jpg" alt="">
+            <div>BEACHES</div>
+            <div>4 Destinations</div>
+        </div>
+        <div class="team-member">
+            <img src="web-images/wb04.jpg" alt="">
+            <div>BEACHES</div>
+            <div>4 Destinations</div>
+        </div>
+        <div class="team-member">
+            <img src="web-images/wb05.jpg" alt="">
+            <div>BEACHES</div>
+            <div>4 Destinations</div>
+        </div>
+        <div class="team-member">
+            <img src="web-images/wb06.jpg" alt="">
+            <div>BEACHES</div>
+            <div>4 Destinations</div>
+        </div>
+        <div class="team-member">
+            <img src="web-images/wb07.jpg" alt="">
+            <div>BEACHES</div>
+            <div>4 Destinations</div>
+        </div>
+        <div class="team-member">
+            <img src="web-images/wb08.jpg" alt="">
+            <div>BEACHES</div>
+            <div>4 Destinations</div>
+        </div>
+    </div>
+    </div>
+
+
+    <div style="display: flex; flex-direction: column; justify-content: center; height: 200px; align-items: center; gap: 5px;">
+        <div style="font-size: 40px;">RECENT STORIES FORM</div>
+        <div style="font-size: 40px; color: palevioletred;">DIFFERENT CITIES</div> 
+        <P style="text-align:justify; padding-left: 360px;padding-right: 400px;">Altera theophrastus his in, case ceteros mentitum no vim, causae offendit id vix. Eum ut utroque omittam commune, ei mel stet dissentiunt. Vim cu ignota contentiones. Eos cu commodo percipitur, ea vix eleifend torquatos rationibus.</P>
+    </div>
+
+    <div class="stories">
+        <div class="stories-cities1">
+            <img height="350px" width="650px" src="web-images/wb09.jpg" alt="">
+            <div style="font-size: 30px;"><i>India</i></div>
+            <div style="font-size: 30px;">7 PERFECT DAY TRIPS</div>
+            <p style="padding-left: 50px;padding-right: 50px;text-align: justify;margin: 0px;">Version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicituuis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Proin gravida nibh</p>
+
+        </div>
+        <div class="stories-cities2">
+            <img height="300px" width="350" src="web-images/wb10.jpg" alt="">
+            <div style="font-size: 30px;"><i>Mazono di Napoli</i></div>
+            <div style="font-size: 30px;">BEAUTIFUL IATLY</div>
+
+            <img height="300px" width="350" src="web-images/wb11.jpg" alt="">
+            <div style="font-size: 30px;"><i>ITALY</i></div>
+            <div style="font-size: 30px;">TRAVEL BOOKS</div>
+        </div>
+        <div class="stories-cities3">
+
+            <div style="font-size: 25px; font-weight: lighter;">46 AMAIZING TRAVELING PICTURES</div>
+            <div style="font-size: 25px; font-weight: lighter;">7 GREAT BOOKS YOU MUST READ</div>
+            <div style="font-size: 25px; font-weight: lighter;">PEOPLE, NATURE,& EVERYDAY LIFE</div>
+            <div style="font-size: 25px; font-weight: lighter;">WHAT TO EAT FOR BREAKFAST</div>
+            <div style="font-size: 25px; font-weight: lighter;">THE BEST CITY IN EUROPE</div>
+            <div style="font-size: 25px; font-weight: lighter;">THE MOST BEAUTIFUL RIVER CITIES</div>
+        </div>
+    </div>
+
+
+    <div style="margin-top:100px; margin-bottom: 100px;">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30773484.55170563!2d61.0245165611659!3d19.69009515037612!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30635ff06b92b791%3A0xd78c4fa1854213a6!2sIndia!5e0!3m2!1sen!2sin!4v1736448009561!5m2!1sen!2sin" width="100%" height="600"></iframe>
+    </div>
+
+
+    <div class="travel">
+        <div class="travel1">
+            <div style="font-size: 50px;">TRAVEL AROUND THE WORLS IN 10 DAYS</div>
+            <P style="font-size: 20px;">Aenean eget odio vel nulla ullamcorper scelerisque. Vestibulum eget diam non velit aliquam fringilla. Praesent et mi turpis. Proin in felis nec dui efficitur aliquam vitae sed urna. Aliquam scelerisque cursus est eu porta. Sed euismod lacus nec ultricies tincidunt.</P>
+            <P style="font-size: 20px;">Vestibulum eget diam non velit aliquam fringilla. Praesent et mi turpis. Proin in felis nec dui efficitur aliquam vitae sed urna.</P>
+        </div>
+        <div class="travel2">
+            <img style="position: absolute; left: 920px; top: 4145px;" height="300px" width="450px" src="web-images/wb12.jpg" alt="">
+            <img style="position: absolute; left: 800px; top: 4300px;" height="250px" width="400px" src="web-images/wb13.jpg" alt="">
+        </div>
+    </div>
+
+
+    <div class="footer1">
+        <div class="footer2">
+        <div style="font-size: 40px;">MY TRAVEL ESSENTIALS</div>
+        <div style="font-size: 25px;">A useful travel essentials you should add to your packing list</div>
+        </div>
+        <div class="footer3">
+            <img src="web-images/wb14.jpg" alt="">
+            <img src="web-images/wb15.jpg" alt="">
+            <img src="web-images/wb16.jpg" alt="">
+            <img src="web-images/wb17.jpg" alt="">
+            <img src="web-images/wb18.jpg" alt="">
+        </div>
+    </div>
+
+
+    <div class="bottom">
+        <div class="b1"><img height="350px" width="100%" src="web-images/wb19.jpg" alt=""></div>
+        <div class="b2"><img height="350px" width="100%" src="web-images/wb20.jpg" alt=""></div>
+        <div class="b3"><img height="350px" width="100%" src="web-images/wb21.jpg" alt=""></div>
+    </div>
+</body>
+</html>
